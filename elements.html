@@ -383,6 +383,16 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			
+			<script type="text/javascript">
+				function changeRandomimage() {
+					var imageArray = ["images/pic01.jpg","images/pic02.jpg","images/pic03.jpg"];
+					var randomImage = Math.floor(Math.random() * imageArray.length);
+					document.body.background = imageArray[randomImage];
+				}
+				changeRandomimage();
+			</script>
+			
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 

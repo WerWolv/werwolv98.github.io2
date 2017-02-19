@@ -9,6 +9,7 @@
 		<title>Everphase</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="google-signin-client_id" content="996999963666-3p2osmr2icr7pamdareftk2egn2n47b8.apps.googleusercontent.com">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -48,7 +49,10 @@
 							sit amet, consetetur<br />
 							</p>
 						</div>
+						
 						<a href="#one" class="more scrolly">Latest updates</a>
+
+						<div class="g-signin2" data-onsuccess="onSignIn"></div>						
 					</section>
 
 				<!-- One -->
@@ -166,6 +170,19 @@
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="https://apis.google.com/js/platform.js" async defer></script>
+			
+						
+			<script type="text/javascript">
+				function changeRandomimage() {
+					var imageArray = ["images/pic01.jpg","images/pic02.jpg","images/pic03.jpg"];
+					var randomImage = Math.floor(Math.random() * imageArray.length);
+					var body = document.getElementsByTagName('body')[0];
+					body.style.backgroundImage = imageArray[randomImage];
+				}
+				changeRandomimage();
+			</script>
+			
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
