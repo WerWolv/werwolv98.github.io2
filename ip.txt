@@ -1,1 +1,1 @@
-https://everphaseserver.herokuapp.com:8192
+everphaseserver.herokuapp.com:8192
